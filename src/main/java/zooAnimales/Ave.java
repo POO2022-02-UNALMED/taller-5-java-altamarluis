@@ -2,7 +2,6 @@
 package zooAnimales;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Ave extends Animal{
     private static ArrayList<Ave> listado = new ArrayList();

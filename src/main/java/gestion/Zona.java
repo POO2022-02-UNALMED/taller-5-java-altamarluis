@@ -1,13 +1,14 @@
 
 package gestion;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import zooAnimales.Animal;
 
 public class Zona {
     private String nombre;
     private Zoologico zoo;
-    private Animal[] animales;
+    private ArrayList<Animal> animales = new ArrayList();
     
     public Zona(String n, Zoologico z){
         nombre = n;
@@ -18,12 +19,11 @@ public class Zona {
     }
     
     public void agregarAnimales(Animal a){
-        animales = Arrays.copyOf(animales,animales.length + 1 );
-        animales[animales.length - 1] = a;
+        animales.add(a);
     }
     
     public int cantidadAnimales(){
-        return animales.length;
+        return animales.size();
     }
     
     public Zoologico getZoo(){
@@ -34,7 +34,7 @@ public class Zona {
         return nombre;
     }
     
-    public Animal[] getAnimales(){
+    public ArrayList<Animal> getAnimales(){
         return animales;
     }
     
