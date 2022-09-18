@@ -7,7 +7,7 @@ import zooAnimales.Animal;
 public class Zona {
     private String nombre;
     private Zoologico zoo;
-    private Animal[] animales;
+    private static Animal[] animales;
     
     public Zona(String n, Zoologico z){
         nombre = n;
@@ -17,7 +17,7 @@ public class Zona {
     public Zona(){
     }
     
-    public void agregarAnimales(Animal a){
+    public static void agregarAnimales(Animal a){
         animales = Arrays.copyOf(animales,animales.length + 1 );
         animales[animales.length - 1] = a;
     }
