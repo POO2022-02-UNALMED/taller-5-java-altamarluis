@@ -38,7 +38,7 @@ public class Zoologico {
         return ubicacion;
     }
     
-    public Zona[] getZonas(){
+    public Zona[] getZona(){
         return zonas;
     }
     
