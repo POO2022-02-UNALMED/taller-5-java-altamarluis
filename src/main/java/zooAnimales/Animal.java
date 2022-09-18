@@ -25,7 +25,7 @@ public class Animal {
     }
     
     public static String totalPorTipo(){
-        return " “Mamiferos: " + m +"\nAves: " + av + "\nReptiles: " + r + "\nPeces: " + p + "\nAnfibios: " + an;
+        return "Mamiferos: " + m +"\nAves: " + av + "\nReptiles: " + r + "\nPeces: " + p + "\nAnfibios: " + an;
     }
     
     @Override
