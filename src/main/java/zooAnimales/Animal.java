@@ -16,6 +16,7 @@ public class Animal {
     
     
     public Animal(String n, int e, String h, String g){
+        nombre = n;
         edad = e;
         habitat = h;
         genero = g;   
