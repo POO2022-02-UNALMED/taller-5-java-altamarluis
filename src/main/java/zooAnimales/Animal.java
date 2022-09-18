@@ -19,9 +19,11 @@ public class Animal {
         edad = e;
         habitat = h;
         genero = g;
+        Zona.agregarAnimales(this);
     }
     
     public Animal(){
+        Zona.agregarAnimales(this);
     }
     
     public static String totalPorTipo(){
