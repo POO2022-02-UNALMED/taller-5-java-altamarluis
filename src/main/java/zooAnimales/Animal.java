@@ -18,12 +18,10 @@ public class Animal {
     public Animal(String n, int e, String h, String g){
         edad = e;
         habitat = h;
-        genero = g;
-        Zona.agregarAnimales(this);
+        genero = g;   
     }
     
     public Animal(){
-        Zona.agregarAnimales(this);
     }
     
     public static String totalPorTipo(){
@@ -86,6 +84,7 @@ public class Animal {
     
     public void setZona(Zona g){
         zona = g;
+        zona.agregarAnimales(this);
     }
     
     public static void totalAnimales(String t){
